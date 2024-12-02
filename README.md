@@ -94,7 +94,7 @@ To get a local copy up and running follow these simple example steps.
 1. Setup a virtual environment
    ```sh
    cd project
-   python<version> -m venv <virtual-environment-name>
+   python -m venv <virtual-environment-name>
    source <virtual-environment-name>/bin/activate
    ```
 2. Install the dependencies using pip
@@ -105,7 +105,7 @@ To get a local copy up and running follow these simple example steps.
 1. Setup a virtual environment
    ```sh
    cd project
-   python<version> -m venv <virtual-environment-name>
+   python -m venv <virtual-environment-name>
    ./<virtual-environment-name>/Scripts/activate
    ```
 2. Install the dependencies using pip
@@ -126,6 +126,14 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    optimate-osm-airport-data-dumper -o ~/airport.json
    ```
+## Parameters
+| Parameter | Name | Description |
+| --- | --- | --- |
+| -o | --output | File where the airport data will be written to |
+| -p | --preview | Display the airport data preview (default = False) |
+| -a | --airport | ICAO code of the airport we want to retrieve (default=LFBO) |
+| -f | --filter | OSM filter with the features we want to extract (see: https://wiki.openstreetmap.org/wiki/Key:aeroway) |
+| -g | --geojson | Extract only the geometry of edges (default=False) |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
